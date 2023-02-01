@@ -12,7 +12,7 @@ function App() {
 
   async function getAllCharacters() {
     let pageRandom = Math.floor(Math.random() * 200)
-    const response = await fetch(`https://api.unsplash.com/photos?page=1&per_page=30&client_id=iPDwzFCrPN74Hva39OkxKPUBp-vSWMkQIDtI5Zx-JAw`)
+    const response = await fetch(`https://api.unsplash.com/photos?page=${pageRandom}&per_page=30&client_id=iPDwzFCrPN74Hva39OkxKPUBp-vSWMkQIDtI5Zx-JAw`)
     const characters = await response.json()
     console.log(characters);
     setCharacters(characters)
