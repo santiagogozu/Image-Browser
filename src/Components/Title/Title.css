@@ -1,0 +1,19 @@
+.text {
+    font-family: "Yanone Kaffeesatz";
+    font-size: 100px;
+    display: flex;
+    user-select: none;
+    flex-direction: column;
+}
+
+.text .letter {
+    transition: ease-out 1s;
+    transform: translateY(30%);
+}
+
+
+.text .shadow {
+    color: #999;
+    transition: ease-in 5s, ease-out 5s;
+  }
+
