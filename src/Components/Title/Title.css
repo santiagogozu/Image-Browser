@@ -1,6 +1,6 @@
 .text {
     font-family: "Yanone Kaffeesatz";
-    font-size: 100px;
+    font-size: 5vw;
     display: flex;
     user-select: none;
     flex-direction: column;
@@ -17,3 +17,9 @@
     transition: ease-in 5s, ease-out 5s;
   }
 
+  @media screen and (max-width:768px){
+    .text{
+        font-size: 15vw;
+    }
+
+  }
